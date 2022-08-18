@@ -7,12 +7,7 @@ const List = () => {
   const { data, addItem, removeItem, moveItem } = useGenerateData();
   return (
     <>
-      <ListItem
-        removeItem={removeItem}
-        addItem={addItem}
-        data={data}
-        moveItem={moveItem}
-      />
+      <ListItem removeItem={removeItem} data={data} moveItem={moveItem} />
       <AddItem addItem={addItem} />
     </>
   );

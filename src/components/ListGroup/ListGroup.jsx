@@ -9,12 +9,7 @@ const ListGroup = ({ isDropOpen }) => {
     <>
       {isDropOpen && (
         <>
-          <ListItem
-            removeItem={removeItem}
-            addItem={addItem}
-            data={data}
-            moveItem={moveItem}
-          />
+          <ListItem removeItem={removeItem} data={data} moveItem={moveItem} />
           <AddItem addItem={addItem} />
         </>
       )}
