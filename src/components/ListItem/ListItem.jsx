@@ -1,7 +1,7 @@
 import React from "react";
 import { ListInstance } from "../ListInstance";
 
-const ListItem = ({ data, removeItem, moveItem }) => {
+const ListItem = ({ data, removeItem, moveItem, removeList }) => {
   const ItemCallback = (item, idx) => {
     return (
       <ListInstance
@@ -11,6 +11,7 @@ const ListItem = ({ data, removeItem, moveItem }) => {
         item={item}
         removeItem={removeItem}
         moveItem={moveItem}
+        removeList={removeList}
       />
     );
   };

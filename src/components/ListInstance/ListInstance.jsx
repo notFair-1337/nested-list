@@ -2,7 +2,14 @@ import React, { useState } from "react";
 import { ListGroup } from "../ListGroup";
 import { ControlButton } from "./components";
 
-const ListInstance = ({ data, item, removeItem, moveItem, idx }) => {
+const ListInstance = ({
+  data,
+  item,
+  removeItem,
+  removeList,
+  moveItem,
+  idx,
+}) => {
   const [isDropOpen, setIsDropOpen] = useState(false);
   const handleMoveItemUp = () => moveItem(data, idx, idx - 1);
   const handleMoveItemDown = () => moveItem(data, idx, idx + 1);

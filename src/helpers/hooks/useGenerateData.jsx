@@ -26,5 +26,9 @@ export const useGenerateData = () => {
     setData(data.filter((item) => item.id !== id));
   };
 
-  return { id, data, addItem, removeItem, moveItem };
+  const removeList = () => {
+    setData([]);
+  };
+
+  return { id, data, addItem, removeItem, moveItem, removeList };
 };
